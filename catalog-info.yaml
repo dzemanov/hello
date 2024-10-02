@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello
+  annotations:
+    github.com/project-slug: dzemanov/hello
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/createdAt: 10/2/2024, 1:20:01 PM
+    custom.io/other: value
+  labels:
+    other: test-label
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:default/janus-authors
+  scaffoldedFrom: template:default/create-react-app-template-with-timestamp-entityref
